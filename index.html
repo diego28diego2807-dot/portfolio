@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diego Dev — Web Developer Freelance</title>
+  <meta name="description" content="Diego Dev, web developer freelance. Creo siti web moderni, veloci e su misura per la tua attività." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">Diego</span><span class="logo-accent">Dev</span>
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">Chi sono</a>
+        <a href="#services" class="nav-link">Servizi</a>
+        <a href="#projects" class="nav-link">Progetti</a>
+        <a href="#pricing" class="nav-link">Prezzi</a>
+        <a href="#contact" class="nav-link nav-link-cta">Contattami</a>
+      </nav>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">Chi sono</a>
+      <a href="#services" class="mobile-link">Servizi</a>
+      <a href="#projects" class="mobile-link">Progetti</a>
+      <a href="#pricing" class="mobile-link">Prezzi</a>
+      <a href="#contact" class="mobile-link">Contattami</a>
+    </nav>
+  </div>
+
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+
+      <div class="hero-eyebrow">
+        <span class="dot-pulse"></span>
+        Disponibile per nuovi progetti
+      </div>
+
+      <h1 class="hero-title">
+        Creo siti web<br />
+        <em>moderni</em> e<br />
+        professionali
+      </h1>
+
+      <p class="hero-subtitle">
+        Trasformo le tue idee in esperienze digitali che convertono visitatori in clienti. Ogni progetto è pensato su misura, con attenzione ai dettagli e alla performance.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Contattami</a>
+        <a href="#projects" class="btn btn-ghost">Vedi i lavori</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Progetti completati</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1+</span>
+          <span class="stat-label">Anni di esperienza</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Clienti soddisfatti</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scorri</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ========== CHI SONO ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <div class="about-grid">
+        <!-- Left: visual block -->
+        <div class="about-visual fade-in">
+          <div class="about-card-photo">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="44" r="22" fill="var(--accent)" opacity="0.15"/>
+                <circle cx="60" cy="44" r="22" stroke="var(--accent)" stroke-width="1.5"/>
+                <path d="M20 100c0-22.09 17.91-40 40-40s40 17.91 40 40" stroke="var(--accent)" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <div class="photo-tag">Diego Borgia</div>
+            <div class="photo-sub">Web Developer · Casarano(LE)</div>
+          </div>
+          <div class="about-skills-list">
+            <span>HTML & CSS</span><span>JavaScript</span><span>WordPress</span>
+            <span>WooCommerce</span><span>PHP</span><span>SEO</span>
+          </div>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about-text fade-in">
+          <div class="section-label">Chi sono</div>
+          <h2 class="section-title">Sviluppatore con la passione per il dettaglio</h2>
+          <p>
+            Sono Diego Borgia, web developer freelance con sede a Casarano. Da un anno aiuto piccole imprese, professionisti e startup a costruire la propria presenza online in modo efficace e distintivo.
+          </p>
+          <p>
+            Non mi limito a scrivere codice: ragiono come un partner di business. Ogni sito che consegno è ottimizzato per la velocità, piacevole da usare su qualsiasi dispositivo e costruito per raggiungere i tuoi obiettivi — che siano più prenotazioni, più vendite o più visibilità.
+          </p>
+          <p>
+            Lavoro con metodologia agile, consegne puntuali e comunicazione trasparente. Costruisco relazioni durature con i miei clienti: molti di loro tornano per ogni nuovo progetto.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem;">Parliamo del tuo progetto</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========== SERVIZI ========== -->
+  <section class="services section section-dark" id="services">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <div class="section-label light">Cosa faccio</div>
+        <h2 class="section-title light">Servizi su misura<br />per ogni esigenza</h2>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M16 44h16M24 36v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M12 20l6 5-6 5M22 28h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Siti web vetrina</h3>
+          <p class="service-desc">
+            Siti web eleganti e performanti per professionisti, studi e piccole imprese. Design personalizzato, mobile-first, ottimizzato SEO fin dalla prima pagina.
+          </p>
+          <ul class="service-features">
+            <li>Design custom responsive</li>
+            <li>Ottimizzazione velocità (Core Web Vitals)</li>
+            <li>CMS per gestione autonoma</li>
+            <li>Integrazione Google Analytics</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card service-card-featured fade-in">
+          <div class="service-badge">Più richiesto</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 12h36l-3 20H9L6 12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="19" cy="40" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="33" cy="40" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 20h24M11 28h26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">E-commerce</h3>
+          <p class="service-desc">
+            Shop online pronti a vendere. Realizzo e-commerce con WooCommerce o soluzioni custom, con gestione prodotti, pagamenti sicuri e checkout ottimizzato per la conversione.
+          </p>
+          <ul class="service-features">
+            <li>WooCommerce / soluzione custom</li>
+            <li>Pagamenti con Stripe, PayPal, Satispay</li>
+            <li>Checkout ottimizzato per mobile</li>
+            <li>Integrazione magazzino e spedizioni</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card fade-in">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6v8M24 34v8M6 24h8M34 24h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M24 19v5l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Manutenzione & gestione</h3>
+          <p class="service-desc">
+            Hai già un sito ma non sai chi lo segue? Mi occupo di aggiornamenti, backup, sicurezza e piccole modifiche. Canone mensile fisso, nessuna sorpresa.
+          </p>
+          <ul class="service-features">
+            <li>Aggiornamenti CMS e plugin</li>
+            <li>Backup automatici giornalieri</li>
+            <li>Monitoraggio uptime 24/7</li>
+            <li>Modifiche e contenuti inclusi</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PROGETTI ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Progetti recenti</h2>
+        <p class="section-desc">Una selezione dei lavori realizzati per clienti reali. Ogni progetto nasce da un briefing approfondito e si conclude con un risultato misurabile.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Progetto 1 -->
+        <div class="project-card fade-in">
+          <div class="project-visual project-visual-1">
+            <div class="project-overlay">
+              <span class="project-tag">Sito vetrina</span>
+            </div>
+            <div class="project-mockup">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-content">
+                <div class="mock-hero-img"></div>
+                <div class="mock-lines">
+                  <div class="mock-line w-70"></div>
+                  <div class="mock-line w-50"></div>
+                  <div class="mock-btn"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Studio Legale Ferretti — Concept sito per studio legale</h3>
+            <p class="project-desc">Design realizzato come esercizio di web design per uno studio legale moderno. Focus su UX e conversione contatti.</p>
+            <div class="project-tech">
+              <span>WordPress</span><span>CSS custom</span><span>SEO on-page</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progetto 2 -->
+        <div class="project-card fade-in">
+          <div class="project-visual project-visual-2">
+            <div class="project-overlay">
+              <span class="project-tag">E-commerce</span>
+            </div>
+            <div class="project-mockup">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-content">
+                <div class="mock-products">
+                  <div class="mock-product"></div>
+                  <div class="mock-product"></div>
+                  <div class="mock-product"></div>
+                </div>
+                <div class="mock-line w-60" style="margin-top:0.5rem"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Bottega Bianchi — Demo e-commerce ceramiche</h3>
+            <p class="project-desc">Progetto dimostrativo di shop online per artigianato. Struttura WooCommerce con design ottimizzato.</p>
+            <div class="project-tech">
+              <span>WooCommerce</span><span>Stripe</span><span>PHP custom</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progetto 3 -->
+        <div class="project-card fade-in">
+          <div class="project-visual project-visual-3">
+            <div class="project-overlay">
+              <span class="project-tag">Landing page</span>
+            </div>
+            <div class="project-mockup">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-content">
+                <div class="mock-lines" style="padding-top:0.5rem">
+                  <div class="mock-line w-80"></div>
+                  <div class="mock-line w-60"></div>
+                  <div class="mock-line w-40"></div>
+                  <div class="mock-btn" style="margin-top:0.5rem"></div>
+                </div>
+                <div class="mock-form">
+                  <div class="mock-field"></div>
+                  <div class="mock-field"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">NutriCoach — anding page concept per app wellness</h3>
+            <p class="project-desc">Progetto personale di una landing page ad alta conversione (non commissionato da un cliente reale).</p>
+            <div class="project-tech">
+              <span>HTML/CSS/JS</span><span>Mailchimp API</span><span>A/B Testing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PREZZI ========== -->
+  <section class="pricing section section-dark" id="pricing">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <div class="section-label light">Investimento</div>
+        <h2 class="section-title light">Pacchetti chiari,<br />nessuna sorpresa</h2>
+        <p class="section-desc light">Prezzi indicativi — ogni progetto è un caso unico. Contattami per un preventivo su misura, è gratuito e senza impegno.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Base -->
+        <div class="pricing-card fade-in">
+          <div class="pricing-name">Base</div>
+          <div class="pricing-price">
+            <span class="price-from">da</span>
+            <span class="price-amount">490</span>
+            <span class="price-currency">€</span>
+          </div>
+          <div class="pricing-desc">Ideale per professionisti e piccole attività che vogliono una presenza online essenziale e curata.</div>
+          <ul class="pricing-list">
+            <li>Sito fino a 5 pagine</li>
+            <li>Design responsive mobile-first</li>
+            <li>CMS WordPress incluso</li>
+            <li>Form di contatto</li>
+            <li>Ottimizzazione SEO base</li>
+            <li>1 mese di assistenza gratuita</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost-light">Richiedi preventivo</a>
+        </div>
+
+        <!-- Standard (featured) -->
+        <div class="pricing-card pricing-card-featured fade-in">
+          <div class="pricing-badge">Più scelto</div>
+          <div class="pricing-name">Standard</div>
+          <div class="pricing-price">
+            <span class="price-from">da</span>
+            <span class="price-amount">990</span>
+            <span class="price-currency">€</span>
+          </div>
+          <div class="pricing-desc">Per chi cerca un sito completo, performante e ottimizzato per generare contatti qualificati.</div>
+          <ul class="pricing-list">
+            <li>Sito fino a 10 pagine</li>
+            <li>Design custom su misura</li>
+            <li>Blog integrato</li>
+            <li>Google Analytics 4</li>
+            <li>SEO avanzato + sitemap</li>
+            <li>Velocità ottimizzata (PageSpeed)</li>
+            <li>3 mesi di assistenza gratuita</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Richiedi preventivo</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card fade-in">
+          <div class="pricing-name">Premium</div>
+          <div class="pricing-price">
+            <span class="price-from">da</span>
+            <span class="price-amount">1.990</span>
+            <span class="price-currency">€</span>
+          </div>
+          <div class="pricing-desc">Soluzione completa per e-commerce, aziende strutturate o progetti con esigenze avanzate.</div>
+          <ul class="pricing-list">
+            <li>Pagine illimitate</li>
+            <li>E-commerce con WooCommerce</li>
+            <li>Pagamenti online integrati</li>
+            <li>Area riservata clienti</li>
+            <li>SEO tecnico avanzato</li>
+            <li>Formazione all'uso inclusa</li>
+            <li>6 mesi di assistenza gratuita</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost-light">Richiedi preventivo</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note fade-in">
+       
+
+    </div>
+  </section>
+
+
+  <!-- ========== CONTATTI ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info fade-in">
+          <div class="section-label">Parliamo</div>
+          <h2 class="section-title">Hai un progetto<br />in mente?</h2>
+          <p>Raccontami la tua idea. Rispondo entro 24 ore con una valutazione onesta e, se il progetto è adatto a me, un preventivo gratuito.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/>
+                  <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <a href="mailto:diegoborgia07@gmail.com" class="contact-item-value">diegoborgia07@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.21 10.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Telefono / WhatsApp</div>
+                <a href="tel:+393343707538" class="contact-item-value">+39 3343707538</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                  <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Disponibilità</div>
+                <span class="contact-item-value">Lun–Ven, 8.00–20.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-wrapper fade-in">
+          <form class="contact-form" action="https://formspree.io/f/xnjrwnbz" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome e cognome *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Mario Rossi" required />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="utente@email.it" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Di cosa hai bisogno?</label>
+             <select id="subject" name="service" class="form-input form-select" required>
+  <option value="Seleziona un servizio" disabled selected>Seleziona un servizio...</option>
+  <option value="Sito vetrina">Sito web vetrina</option>
+  <option value="E-commerce">E-commerce</option>
+  <option value="Manutenzione">Manutenzione sito esistente</option>
+  <option value="Altro">Altro</option>
+</select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Messaggio *</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Raccontami il tuo progetto..." rows="5" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text">Invia messaggio</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+
+            <!-- Success/error feedback -->
+            <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-text">Diego</span><span class="logo-accent">Dev</span>
+          <p>Web developer freelance a Casarano. Siti web che lavorano per te.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">Chi sono</a>
+          <a href="#services">Servizi</a>
+          <a href="#projects">Progetti</a>
+          <a href="#pricing">Prezzi</a>
+          <a href="#contact">Contatti</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="GitHub" class="social-link">gh</a>
+          <a href="#" aria-label="Instagram" class="social-link">ig</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Diego Borgia </p>
+        <p>Sito realizzato con HTML, CSS e JavaScript puro.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
